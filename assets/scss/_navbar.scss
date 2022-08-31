@@ -1,0 +1,66 @@
+.header{
+    position: relative;
+
+    .container{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: relative;
+        padding: 20px 0;
+        flex-wrap: wrap; // helps with responsive
+
+        .logo img{
+            width: 44px;
+        }
+
+    
+
+        .main-nav{
+            display: flex;
+            gap: 20px;
+            opacity: .5;
+            margin-left: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            
+
+            li:hover{
+                cursor: pointer;
+                color: rgb(225, 147, 29);
+                transition: var(--main-transition);
+
+                
+            }
+
+           
+        }
+
+
+
+        .main-nav i{
+            opacity: .8;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    }
+
+ 
+
+}
+
+@media (max-width:767px) {
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header .logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+     
+}
