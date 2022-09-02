@@ -1,0 +1,20 @@
+ .mega-menu{
+    
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    border-bottom: 3px solid var(--main-color);
+    z-index: 1000;
+    display: flex;
+    gap: 40px;
+    top: calc(100% - 50px);
+    transition: top var(--main-transition) , opacity var(--main-transition);
+
+   img{
+    max-width: 100%;
+    width: 300px;
+    
+   } 
+}
