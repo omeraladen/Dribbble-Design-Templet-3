@@ -1,20 +1,83 @@
  .mega-menu{
-    
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 60%;
     padding: 30px;
     background-color: #fff;
     border-bottom: 3px solid var(--main-color);
-    z-index: 1000;
+    z-index: -1;
     display: flex;
     gap: 40px;
-    top: calc(100% - 50px);
+    top: calc(100% - 10px);
     transition: top var(--main-transition) , opacity var(--main-transition);
+    border-radius: 6px;
+    opacity: 0;
 
    img{
+   position: relative;
     max-width: 100%;
-    width: 300px;
-    
+    width: 300px; 
+    animation: up-and-down 2s linear infinite;
    } 
+
+  
+
+   .links{
+      min-width: 250px;
+     
+  
+      
+   }
+   li:not(:last-child){
+      border-bottom: 1px solid var(--main-color);
+      
+   }
+   a{
+      color: var(--main-color);
+      display: inline-block;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+   }
+   i{
+      margin-right: -5px;
+   }
+
+
+
+}
+
+@keyframes up-and-down{
+   0%,100%{
+       top: 0;
+   }
+   50%{
+      top: -10px;
+   }
+}
+
+@media (max-width:1500px) {
+   .mega-menu .image{
+      display: none;
+   }
+   .mega-menu{
+      width: 45%;
+   }
+}
+@media (max-width:1278px) {
+   .mega-menu{
+      flex-direction: column;
+      gap: 0;
+      padding: 5px;
+   }
+}
+
+@media (max-width:767px) {
+   .mega-menu{
+      width: 80%;
+   }
+}
+.main-nav > li:hover .mega-menu{
+   opacity: 1;
+   z-index: 100;
 }

@@ -151,6 +151,7 @@
         transform:translateY(-50%) ;
         font-size: 20px;
         cursor: pointer;
+        animation: bouncing 1.5s infinite;
 
        
     }
@@ -160,7 +161,14 @@
         transition: .3s;
     }
 }
-
+@keyframes bouncing{
+    0%,10%,20%,50%,80%,100%{
+        transform: translateY(0);
+    }
+    40%,60%{
+        transform: translateY(-10px);
+    }
+}
 @media (max-width:767px) {
 
     .landing {
