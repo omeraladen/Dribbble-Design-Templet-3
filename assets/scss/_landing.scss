@@ -43,6 +43,7 @@
             margin-top: 1rem;
             
             img{
+                opacity: .5;
             width: 3rem;
             height: 3rem;
             cursor: pointer;
@@ -62,6 +63,7 @@
             }
 
             p{
+                opacity: .8;
                 margin-left: -10px;
                 font-weight: 600;
             }
@@ -116,11 +118,11 @@
             width: 100%;
             background-image: url('../images/bg-phone.jpg');
             background-size:cover ;
+           
             background-color: var(--main-color);
             background-blend-mode:lighten ;
             clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 60% 100%, 48% 66%);
             opacity: .9;
-
             z-index: -999;
             position: absolute;
             right: 0;
